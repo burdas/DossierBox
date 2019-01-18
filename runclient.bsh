@@ -1,0 +1,6 @@
+#!/bin/bash
+
+java \
+-Djava.security.manager -Djava.security.policy=./etc/client.policy \
+-Djava.security.auth.login.config=./etc/client.conf \
+-cp ./dist/client.jar client.ClientLogin localhost 5000

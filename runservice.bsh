@@ -1,0 +1,6 @@
+#!/bin/bash
+
+java \
+-Djava.security.manager -Djava.security.policy=./etc/dossierbox.policy \
+-Djava.security.auth.login.config=./etc/dossierbox.conf \
+-cp ./dist/dossierbox.jar:./dist/browser.jar:./dist/cathegory.jar dossierbox.DossierBox 5000 10
